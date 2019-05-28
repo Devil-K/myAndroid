@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#55fc8d43"
+        android:minHeight="218dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvProjectIntroduction1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="温轧机参数"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvShareAllocation1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="温轧机操作"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvProjectAdvantage1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="温轧机液压系统"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvMoneyUse1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="温轧机传动"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvEnterpriseEvaluation1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 0到 10显示这个图片，下面以此类推-->
+    <item android:drawable="@drawable/zhu" android:minLevel="0" android:maxLevel="10"></item>
+
+    <item android:drawable="@drawable/zhu2_1" android:minLevel="10" android:maxLevel="20"></item>
+
+    <item android:drawable="@drawable/zhu2_2" android:minLevel="20" android:maxLevel="30"></item>
+
+    <item android:drawable="@drawable/zhu2_3" android:minLevel="30" android:maxLevel="40"></item>
+
+    <item android:drawable="@drawable/zhu2_4" android:minLevel="40" android:maxLevel="50"></item>
+
+    <item android:drawable="@drawable/zhu2_5" android:minLevel="50" android:maxLevel="60"></item>
+
+    <item android:drawable="@drawable/zhu2_6" android:minLevel="60" android:maxLevel="70"></item>
+
+    <item android:drawable="@drawable/zhu2_7" android:minLevel="70" android:maxLevel="80"></item>
+
+    <item android:drawable="@drawable/zhu2_9" android:minLevel="80" android:maxLevel="90"></item>
+
+    <item android:drawable="@drawable/zhu2_10" android:minLevel="90" android:maxLevel="100"></item>
+
+    <item android:drawable="@drawable/zhu2_11" android:minLevel="100" android:maxLevel="110"></item>
+
+    <item android:drawable="@drawable/zhu2_12" android:minLevel="110" android:maxLevel="120"></item>
+
+    <item android:drawable="@drawable/zhu2_13" android:minLevel="120" android:maxLevel="130"></item>
+
+    <item android:drawable="@drawable/zhu2_14" android:minLevel="130" android:maxLevel="140"></item>
+
+    <item android:drawable="@drawable/zhu2_15" android:minLevel="140" android:maxLevel="150"></item>
+
+    <item android:drawable="@drawable/zhu2_17" android:minLevel="150" android:maxLevel="160"></item>
+
+    <item android:drawable="@drawable/zhu2_18" android:minLevel="160" android:maxLevel="170"></item>
+
+    <item android:drawable="@drawable/zhu2_19" android:minLevel="170" android:maxLevel="180"></item>
+
+    <item android:drawable="@drawable/zhu2_20" android:minLevel="180" android:maxLevel="190"></item>
+
+    <item android:drawable="@drawable/zhu2_21" android:minLevel="190" android:maxLevel="200"></item>
+
+    <item android:drawable="@drawable/zhu2_22" android:minLevel="200" android:maxLevel="210"></item>
+
+    <item android:drawable="@drawable/zhu2_23" android:minLevel="210" android:maxLevel="220"></item>
+
+    <item android:drawable="@drawable/zhu2_24" android:minLevel="220" android:maxLevel="230"></item>
+
+    <item android:drawable="@drawable/zhu2_24" android:minLevel="230" android:maxLevel="240"></item>
+
+    <item android:drawable="@drawable/zhu2_24" android:minLevel="240" android:maxLevel="250"></item>
+
+    <item android:drawable="@drawable/zhu2_25" android:minLevel="250" android:maxLevel="260"></item>
+
+    <item android:drawable="@drawable/zhu2_26" android:minLevel="260" android:maxLevel="270"></item>
+
+    <item android:drawable="@drawable/zhu2_27" android:minLevel="270" android:maxLevel="280"></item>
+
+    <item android:drawable="@drawable/zhu2_28" android:minLevel="280" android:maxLevel="290"></item>
+
+    <item android:drawable="@drawable/zhu2_30" android:minLevel="290" android:maxLevel="300"></item>
+
+    <item android:drawable="@drawable/zhu2_31" android:minLevel="300" android:maxLevel="310"></item>
+
+    <item android:drawable="@drawable/zhu2_32" android:minLevel="310" android:maxLevel="320"></item>
+
+    <item android:drawable="@drawable/zhu2_33" android:minLevel="320" android:maxLevel="330"></item>
+
+    <item android:drawable="@drawable/zhu2_34" android:minLevel="330" android:maxLevel="340"></item>
+
+    <item android:drawable="@drawable/zhu2_37" android:minLevel="340" android:maxLevel="350"></item>
+
+</level-list>

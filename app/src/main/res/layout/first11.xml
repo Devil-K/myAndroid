@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E5E5E5"
+        android:orientation="horizontal">
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAL实验室简介："
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL1"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL2"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL3"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL4"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL5"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL6"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL7"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RAL8"
+                android:textColor="#000000"
+                android:textSize="@dimen/big_font"
+                android:padding="@dimen/view_padding"
+                android:textStyle="bold"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

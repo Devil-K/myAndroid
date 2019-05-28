@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#E5E5E5"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0FFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:text="铸轧机"
+            android:textSize="8pt"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:background="@drawable/button_shape2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\u3000\u3000铸轧机，可将金属熔体在连续铸造凝固的同时进行轧制变形。将液态金属直接浇入辊缝中，轧辊既起着结晶器的作用又同时对金属进行轧压变形，此过程又称为液态轧制或无锭轧制。"
+            android:textSize="8pt"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0FFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:textSize="8pt"
+            android:textColor="#000000"
+            android:text="平整机"
+            android:textAllCaps="false"
+            android:background="@drawable/button_shape2"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\u3000\u3000平整机，特别适用于带钢平整机及冷轧光整机。经过再结晶退火和镀锌后的带钢往往需要平整，使带钢获得必要的性能和表面质量以满足后工序加工的要求。在连续热镀锌机组上的平整机，平整实质是一种小压下量的轧制变形。"
+            android:textSize="8pt"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0FFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:textSize="8pt"
+            android:textColor="#000000"
+            android:text="温轧机"
+            android:textAllCaps="false"
+            android:background="@drawable/button_shape2"/>
+
+        <TextView
+            android:id="@+id/jvli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\u3000\u3000温轧机，金属或合金常温组织发生回复的温度以上、再结晶的温度以下的温度范围内进行的轧制过程。"
+            android:textSize="8pt"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="8pt"
+
+            />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="25dp" />
+        </TableLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:src="@drawable/log2"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

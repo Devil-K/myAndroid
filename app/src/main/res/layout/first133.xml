@@ -1,0 +1,3585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#0000FF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="温  轧  机"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:background="@drawable/first133">
+        <!-- 悬浮按钮 -->
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/arrow"
+            android:gravity="center" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#0000FF"/>
+    <com.example.lenovo.myapplication.NoAutoScrollViewWithPosition
+        android:id="@+id/noAutoScrollViewWithPosition"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/projectIntroduction1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/first131_2"
+                    android:gravity="center_horizontal"
+                    android:text="温轧机参数"
+                    android:textColor="#66CC00"
+                    android:textSize="32dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:id="@+id/tvProjectIntroduction1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="温扎机参数"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                /*第一行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左张力设定"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右张力设定"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="kN"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="kN"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左张力实际"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右张力实际"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="kN"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="kN"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左卷温度设定"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右卷温度设定"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左侧温度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右侧温度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                /*第二行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左侧线速度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右侧线速度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="m/s"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="m/s"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                /*第三行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左导辊辊缝"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右导辊棍缝"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左导辊速度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右导辊速度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="m/s"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="m/s"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左加热调整量"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右加调整量"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                /*第二行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="上辊温度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="下辊温度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="手动辊缝设定"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="钢带加热温度设定"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左卷径"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右卷径"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="尾部坐标"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="头部坐标"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左炉上温"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右炉上温"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                /*第二行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左炉圈数"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右炉圈数"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                /*第三行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左炉下温"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右炉下温"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左箱底辊道速度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右箱底辊道速度"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="m/s"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="m/s"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="NDS实际辊缝"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DS实际辊缝"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                /*第二行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="NDS轧制力"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DS轧制力"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="kN"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="kN"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="辊缝倾斜"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="异步比"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                /*第二行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="K1"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="接料步"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="℃"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/shareAllocation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/first131_2"
+                    android:gravity="center_horizontal"
+                    android:text="温轧机操作"
+                    android:textColor="#66CC00"
+                    android:textSize="32dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:id="@+id/tvshareAllocation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="扎辊辊径设定"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                /*第一行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="上支撑辊"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="下支撑辊"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="上工作辊"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="下工作辊"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#66FF00"
+                        android:textSize="20dp"
+                        android:background="@drawable/editview_shape"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="#660000"
+                        android:textSize="18dp"
+                        android:gravity="left"/>
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="左热卷箱"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="夹送电机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="夹送风机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="卷取主机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="卷取主机风机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="右热卷箱"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="夹送电机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="夹送风机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="卷取主机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="卷取主机风机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="齿轮箱润滑泵"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左卷取"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="温扎机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右卷取"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="温扎机上辊"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="主机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="电机风机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="温扎机下辊"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="主机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="电机风机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="液压站"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="液压站1#主泵"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="液压站2#主泵"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="液压站1#背压泵"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="液压站2#背压泵"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="辊道辐射加热器"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="左热卷箱"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="右热卷箱"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="平整机"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="主机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="电机风机"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="其它设备"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="轧辊加热器"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="供水泵"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="平整机辊道"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="温扎机左辊道"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="温扎机右辊道"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox1" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/projectAdvantage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/first131_2"
+                    android:gravity="center_horizontal"
+                    android:text="温轧机液压系统"
+                    android:textColor="#66CC00"
+                    android:textSize="32dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:id="@+id/tvProjectAdvantage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="AGC液压站报警状态"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                /*第一行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="液位低"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="油温高"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="压力高"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="液位超低"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="油温低"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="压力低"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="温扎机液压系统电磁阀状态"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                /*第一行参数*/
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DT1"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DT2"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DT3"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DT4"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="301DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="302DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="303DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="304DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="305DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="306DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="307DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="308DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="309DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="310DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="311DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="312DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="313DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="314DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="315DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="316DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="317DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="318DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="319DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="320DT"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        style="@style/MyCheckBox" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/moneyUse1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/first131_2"
+                    android:gravity="center_horizontal"
+                    android:text="温轧机传动"
+                    android:textColor="#66CC00"
+                    android:textSize="32dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TextView
+                    android:id="@+id/tvMoneyUse1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="左卷箱减速机"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="滤油器堵塞检测"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关1"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关2"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关3"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关4"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关5"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关6"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="右卷箱减速机"
+                    android:textColor="#990066"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="滤油器堵塞检测"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关1"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关2"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关3"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关4"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关5"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#A1A1A1"/>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="润滑流量开关6"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"/>
+            </TableLayout>
+            <TextView
+                android:id="@+id/enterpriseEvaluation1"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <TextView
+                android:id="@+id/tvEnterpriseEvaluation1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/log2"/>
+
+        </LinearLayout>
+    </com.example.lenovo.myapplication.NoAutoScrollViewWithPosition>
+</LinearLayout>

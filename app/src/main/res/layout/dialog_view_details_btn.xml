@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:background="#55fc8d43"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="218dp">
+
+        <TextView
+            android:id="@+id/tvProjectIntroduction"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="铸轧机参数" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvShareAllocation"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="铸轧机棒图" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tvProjectAdvantage"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="铸轧机调零" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tvMoneyUse"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="铸轧机液压系统" />
+        <TextView
+            android:id="@+id/tvEnterpriseEvaluation"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="铸轧机传动" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
